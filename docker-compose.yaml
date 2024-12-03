@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  wa-sender-service:
+    build: .
+    container_name: wa-sender-service
+    restart: always
+    ports:
+      - "3001:3000"
+    volumes:
+      - ./src:/app/src
